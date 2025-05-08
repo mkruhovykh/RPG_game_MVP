@@ -47,7 +47,7 @@ public class AuthController {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<Void> register(@RequestBody RegisterRequest registerRequest) {
+    public ResponseEntity<String> register(@RequestBody RegisterRequest registerRequest) {
         User newUser = new User();
         newUser.setUsername(registerRequest.getUsername());
         newUser.setPassword(registerRequest.getPassword());
@@ -56,6 +56,6 @@ public class AuthController {
 
         userService.saveUser(newUser);
 
-        return ResponseEntity.status(HttpStatus.OK).build();
+        return ResponseEntity.ok("User registered successfully.: Username: " + newUser.getUsername());
     }
 }
