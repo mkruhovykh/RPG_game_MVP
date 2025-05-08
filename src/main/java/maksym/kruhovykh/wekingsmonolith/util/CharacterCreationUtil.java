@@ -1,11 +1,11 @@
 package maksym.kruhovykh.wekingsmonolith.util;
 
 import lombok.experimental.UtilityClass;
-import maksym.kruhovykh.wekingsmonolith.auth.repository.entity.CharacterInventory;
-import maksym.kruhovykh.wekingsmonolith.auth.repository.entity.CharacterParams;
-import maksym.kruhovykh.wekingsmonolith.auth.repository.entity.CharacterStatistics;
-import maksym.kruhovykh.wekingsmonolith.auth.repository.entity.User;
-import maksym.kruhovykh.wekingsmonolith.auth.repository.entity.Character;
+import maksym.kruhovykh.wekingsmonolith.mvp.repository.entity.CharacterInventory;
+import maksym.kruhovykh.wekingsmonolith.mvp.repository.entity.CharacterParams;
+import maksym.kruhovykh.wekingsmonolith.mvp.repository.entity.CharacterStatistics;
+import maksym.kruhovykh.wekingsmonolith.mvp.repository.entity.User;
+import maksym.kruhovykh.wekingsmonolith.mvp.repository.entity.Character;
 
 @UtilityClass
 public class CharacterCreationUtil {
